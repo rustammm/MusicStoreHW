@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicStore"
+        xmlns:Properties="clr-namespace:MusicStore.Properties" x:Class="MusicStore.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="73*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="448*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="MusicStoreInstrumentsGrid" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" Height="284" Width="517" Grid.Row="1" Grid.ColumnSpan="2" PreviewKeyDown="MusicStoreInstrumentsGrid_PreviewKeyDown"/>
+        <Menu x:Name="menu" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="507">
+            <MenuItem Header="View">
+                <CheckBox x:Name="MusicStoreShowPianoCheckbox" Content="Pianos" Click="MusicStoreShowPianoCheckbox_Click"/>
+                <CheckBox x:Name="MusicStoreShowGuitarCheckbox" Content="Guitars" Click="MusicStoreShowGuitarCheckbox_Click"/>
+            </MenuItem>
+            <MenuItem Header="Add Instrument" AllowDrop="True">
+                <MenuItem x:Name="addPianoButton" Header="Piano" Click="addPianoButton_Click"/>
+                <MenuItem x:Name="addGuitarButton" Header="Guitar" Click="addGuitarButton_Click"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>

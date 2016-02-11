@@ -1,0 +1,5 @@
+C:\Users\rustammm\Documents\Visual Studio 2015\Projects\MusicStore\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\rustammm\Documents\Visual Studio 2015\Projects\MusicStore\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\rustammm\Documents\Visual Studio 2015\Projects\MusicStore\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\rustammm\Documents\Visual Studio 2015\Projects\MusicStore\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\rustammm\Documents\Visual Studio 2015\Projects\MusicStore\ClassLibrary\obj\Debug\ClassLibrary.pdb
