@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Guitar.cs" />
-    <Compile Include="IProductInterface.cs" />
+    <Compile Include="IProduct.cs" />
     <Compile Include="Piano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

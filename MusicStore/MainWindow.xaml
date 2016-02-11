@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicStore"
-        xmlns:Properties="clr-namespace:MusicStore.Properties" x:Class="MusicStore.MainWindow"
+        xmlns:Properties="clr-namespace:MusicStore.Properties" x:Name="MusicStoreMainWindow" x:Class="MusicStore.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Closed="MusicStoreMainWindow_Closed">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="7*"/>
@@ -17,15 +17,20 @@
             <ColumnDefinition Width="448*"/>
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="MusicStoreInstrumentsGrid" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" Height="284" Width="517" Grid.Row="1" Grid.ColumnSpan="2" PreviewKeyDown="MusicStoreInstrumentsGrid_PreviewKeyDown"/>
-        <Menu x:Name="menu" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="507">
+        <Menu x:Name="menu" Grid.ColumnSpan="2" HorizontalAlignment="Right" Height="21" VerticalAlignment="Top" Width="507" Margin="0,0,10,0">
+            <MenuItem Header="File">
+                <MenuItem x:Name="MusicSaveButton" Header="Save" Click="MusicSaveButton_Click"/>
+                <MenuItem Header="Export"/>
+            </MenuItem>
             <MenuItem Header="View">
-                <CheckBox x:Name="MusicStoreShowPianoCheckbox" Content="Pianos" Click="MusicStoreShowPianoCheckbox_Click"/>
-                <CheckBox x:Name="MusicStoreShowGuitarCheckbox" Content="Guitars" Click="MusicStoreShowGuitarCheckbox_Click"/>
+                <CheckBox x:Name="MusicStoreShowPianoCheckbox" Content="Pianos" Click="MusicStoreShowPianoCheckbox_Click" IsChecked="True"/>
+                <CheckBox x:Name="MusicStoreShowGuitarCheckbox" Content="Guitars" Click="MusicStoreShowGuitarCheckbox_Click" IsChecked="True"/>
             </MenuItem>
             <MenuItem Header="Add Instrument" AllowDrop="True">
                 <MenuItem x:Name="addPianoButton" Header="Piano" Click="addPianoButton_Click"/>
                 <MenuItem x:Name="addGuitarButton" Header="Guitar" Click="addGuitarButton_Click"/>
             </MenuItem>
+            <MenuItem x:Name="MusicStoreCalculateButton" Header="Calculate" Click="MusicStoreCalculateButton_Click"/>
         </Menu>
 
     </Grid>

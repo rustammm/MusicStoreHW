@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    [Serializable]
     public class Piano : IProduct
     {
         public Piano(int customID)

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    [Serializable]
     public class Guitar : IProduct
     {
-
         public Guitar(int customID)
         {
             Count = 0;
